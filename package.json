@@ -1,0 +1,23 @@
+{
+  "name": "vcc-order-bot",
+  "version": "2.0.0",
+  "description": "Customer-only Telegram VCC order bot powered by Supabase, with a separate web admin panel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node --watch index.js",
+    "test": "node --check index.js start.js src/*.js src/handlers/*.js src/services/*.js"
+  },
+  "author": "ZamsXit",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.6"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "axios": "^1.7.2",
+    "@supabase/supabase-js": "^2.45.0",
+    "ws": "^8.18.0"
+  }
+}
